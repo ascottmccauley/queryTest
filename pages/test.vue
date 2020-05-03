@@ -10,7 +10,7 @@
         My sublime Nuxt.js project
       </h2>
       <div class="links">
-        <nuxt-link to="/test">Home Page</nuxt-link>
+        <nuxt-link to="/">Home Page</nuxt-link>
       </div>
     </div>
   </div>
