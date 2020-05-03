@@ -12,7 +12,7 @@ export default {
   beforeCreate() {
     this.$nextTick(() => {
       this.$store.dispatch('embed/checkEmbed', this.$route.query.embed)
-    }
+    })
   }
 }
 </script>
