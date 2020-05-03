@@ -10,7 +10,9 @@ export default {
     ...mapGetters({ embedded: 'embed/isEmbedded' }),
   },
   beforeCreate() {
-    this.$store.dispatch('embed/checkEmbed', this.$route.query.embed)
+    this.$nextTick(() => {
+      this.$store.dispatch('embed/checkEmbed', this.$route.query.embed)
+    }
   }
 }
 </script>
